@@ -9,6 +9,6 @@ Router.use("/auth", AuthRouter);
 Router.use("/user", UserRouter);
 Router.use("/fields", FieldRouter);
 Router.use("/pages", PageRouter);
-// Router.use("/status", StatusRouter);
+Router.use("/status", StatusRouter);
 
 module.exports = Router;
