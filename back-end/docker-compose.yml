@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  mooreexoticsbackend:
+    image: mooreexoticsbackend
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    env_file:
+      - .env
+    ports:
+      - 8800:8800
